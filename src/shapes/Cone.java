@@ -12,7 +12,7 @@ public class Cone {
 		GL2 gl = drawable.getGL().getGL2();
 		GLU glu = new GLU();
 		
-		float height = 0.9f;
+		float height = 1f;
 		float width_base = 0.5f;
 		float width_top = 0.0f;
 		
@@ -20,7 +20,7 @@ public class Cone {
 		gl.glPushMatrix();
 		
 		// x, y, z coordiantes of a translation vector
-		gl.glTranslatef(x, y, z);
+		gl.glTranslatef(x, y - height / 2 , z);
 		
 		gl.glScalef(a, a, a);
 		

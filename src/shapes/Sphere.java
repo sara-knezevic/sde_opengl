@@ -24,7 +24,7 @@ public class Sphere {
 		
 		gl.glColor3f(0, 0, 1);
 		GLUquadric quadric = glu.gluNewQuadric();
-		glu.gluSphere(quadric, 0.5, 50, 15);
+		glu.gluSphere(quadric, 1, 50, 15);
 		glu.gluDeleteQuadric(quadric);
 		
 		gl.glPopMatrix();

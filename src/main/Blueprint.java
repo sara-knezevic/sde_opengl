@@ -134,9 +134,10 @@ public class Blueprint implements GLEventListener, KeyListener {
 		// code for drawing shapes
 		new Cube(drawable, 0, 0, 1, 1);
 		new Cylinder(drawable, 0, 1, 1, 1);
+		new Cone(drawable, 0, 2, 1, 1);
 		new Cube(drawable, 1, 0, -4, 1);
 		new Cuboid(drawable, -1, -2, -4, 1);
-		new Pyramid(drawable, -1, 0, -4, 1, 5);
+		new Pyramid(drawable, -1, 0, -4, 1, 6);
 		new Cylinder(drawable, 2, -1, -4, 1);
 		new Cone(drawable, -1, 3, -4, 1);
 		new Sphere(drawable, 0, 2, -4, 1);

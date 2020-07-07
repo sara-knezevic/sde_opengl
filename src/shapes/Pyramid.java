@@ -26,184 +26,184 @@ public class Pyramid {
 		case 3:
 			// base
 			gl.glBegin(GL2.GL_TRIANGLES);
-				gl.glVertex3f(-0.5f, 0, -0.29f);
-				gl.glVertex3f(0f, 0, 0.58f);
-				gl.glVertex3f(0.5f, 0, -0.29f);
+				gl.glVertex3f(-1f, 0, -0.58f);
+				gl.glVertex3f(0f, 0, 1.15f);
+				gl.glVertex3f(1f, 0, -0.58f);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 				gl.glColor3f(1, 0, 1);
 				
-				gl.glVertex3f(-0.5f, 0, -0.29f);
-				gl.glVertex3f(0f, 0, 0.58f);
-				gl.glVertex3f(0f, 0.5f, 0);
+				gl.glVertex3f(-1f, 0, -0.58f);
+				gl.glVertex3f(0f, 0, 1.15f);
+				gl.glVertex3f(0f, 1.15f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 				gl.glColor3f(1f, 0.3f, 1);
 				
-				gl.glVertex3f(0f, 0, 0.58f);
-				gl.glVertex3f(0.5f, 0, -0.29f);
-				gl.glVertex3f(0.0f, 0.5f, 0);
+				gl.glVertex3f(0f, 0, 1.15f);
+				gl.glVertex3f(1f, 0, -0.58f);
+				gl.glVertex3f(0.0f, 1.15f, 0);
 			gl.glEnd();
 		
 			gl.glBegin(GL2.GL_TRIANGLES);
 				gl.glColor3f(0.2f, 0.4f, 1);
 				
-				gl.glVertex3f(-0.5f, 0, -0.29f);
-				gl.glVertex3f(0.5f, 0, -0.29f);
-				gl.glVertex3f(0.0f, 0.5f, 0);
+				gl.glVertex3f(1f, 0, -0.58f);
+				gl.glVertex3f(-1f, 0, -0.58f);
+				gl.glVertex3f(0.0f, 1.15f, 0);
 			gl.glEnd();
 			break;
 		case 4:
 			// base
 			gl.glBegin(GL2.GL_QUADS);
-	            gl.glVertex3f(-0.5f, 0, -0.5f);
-	            gl.glVertex3f(0.5f, 0, -0.5f);
-	            gl.glVertex3f(0.5f, 0, 0.5f);
-	            gl.glVertex3f(-0.5f, 0, 0.5f);
+	            gl.glVertex3f(-1f, 0, -1f);
+	            gl.glVertex3f(1f, 0, -1f);
+	            gl.glVertex3f(1f, 0, 1f);
+	            gl.glVertex3f(-1f, 0, 1f);
 	        gl.glEnd();
 	        
 	        gl.glBegin(GL2.GL_TRIANGLES);
 	        gl.glColor3f(1f, 0.3f, 1);
 			
-			gl.glVertex3f(-0.5f, 0, -0.5f);
-			gl.glVertex3f(0.5f, 0, -0.5f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(-1f, 0, -1f);
+			gl.glVertex3f(1f, 0, -1f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(0.2f, 0.4f, 1);
 			
-			gl.glVertex3f(0.5f, 0, -0.5f);
-			gl.glVertex3f(0.5f, 0, 0.5f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(1f, 0, -1f);
+			gl.glVertex3f(1f, 0, 1f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(0.1f, 0.3f, 0.8f);
 			
-			gl.glVertex3f(0.5f, 0, 0.5f);
-			gl.glVertex3f(-0.5f, 0, 0.5f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(1f, 0, 1f);
+			gl.glVertex3f(-1f, 0, 1f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(1, 0.98f, 0.6f);
 			
-			gl.glVertex3f(-0.5f, 0, 0.5f);
-			gl.glVertex3f(-0.5f, 0, -0.5f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(-1f, 0, 1f);
+			gl.glVertex3f(-1f, 0, -1f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			break;
 		case 5:
 			// base
 			gl.glBegin(GL2.GL_POLYGON);
-				gl.glVertex3f(-0.6f, 0f, 0.2f);
-				gl.glVertex3f(-0.4f, 0f, -0.5f);
-				gl.glVertex3f(0.4f, 0.0f, -0.5f);
-				gl.glVertex3f(0.6f, 0.0f, 0.2f);
-				gl.glVertex3f(0.0f, 0.0f, 0.6f);
+				gl.glVertex3f(0f, 0f, -1f);
+				gl.glVertex3f(0.94f, 0f, -0.31f);
+				gl.glVertex3f(0.58f, 0.0f, 0.8f);
+				gl.glVertex3f(-0.59f, 0.0f, 0.8f);
+				gl.glVertex3f(-0.95f, 0.0f, -0.32f);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(1, 0.98f, 0.6f);
 			
-			gl.glVertex3f(-0.6f, 0f, 0.2f);
-			gl.glVertex3f(-0.4f, 0f, -0.5f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(0f, 0f, -1f);
+			gl.glVertex3f(0.94f, 0f, -0.31f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(0.35f, 0.1f, 0.48f);
 			
-			gl.glVertex3f(-0.4f, 0f, -0.5f);
-			gl.glVertex3f(0.4f, 0.0f, -0.5f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(0.94f, 0f, -0.31f);
+			gl.glVertex3f(0.58f, 0.0f, 0.8f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(0.32f, 0.9f, 0.1f);
 			
-			gl.glVertex3f(0.4f, 0.0f, -0.5f);
-			gl.glVertex3f(0.6f, 0.0f, 0.2f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(0.58f, 0.0f, 0.8f);
+			gl.glVertex3f(-0.59f, 0.0f, 0.8f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(0.2f, 0.4f, 0.2f);
 			
-			gl.glVertex3f(0.6f, 0.0f, 0.2f);
-			gl.glVertex3f(0.0f, 0.0f, 0.6f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(-0.59f, 0.0f, 0.8f);
+			gl.glVertex3f(-0.95f, 0.0f, -0.32f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(0.76f, 0.99f, 0.001f);
 			
-			gl.glVertex3f(0.0f, 0.0f, 0.6f);
-			gl.glVertex3f(-0.6f, 0f, 0.2f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(-0.95f, 0.0f, -0.32f);
+			gl.glVertex3f(0f, 0f, -1f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			break;
 		case 6:
 			// base
 			gl.glBegin(GL2.GL_POLYGON);
-				gl.glVertex3f(-0.5f, 0.0f, 1.0f);
-				gl.glVertex3f( 0.5f, 0.0f, 1.0f);
-				gl.glVertex3f(1.0f, 0.0f, 0.0f);
-				gl.glVertex3f(0.5f, 0.0f, -1.0f);
-				gl.glVertex3f(-0.5f, 0.0f, -1.0f);
-				gl.glVertex3f(-1.0f, 0.0f, 0.0f);
-				gl.glVertex3f(-0.5f, 0.0f, 1.0f);
+				gl.glVertex3f(0f, 0.0f, -1.0f);
+				gl.glVertex3f(0.86f, 0.0f, -0.5f);
+				gl.glVertex3f(0.86f, 0.0f, 0.5f);
+				gl.glVertex3f(0f, 0.0f, 1.0f);
+				gl.glVertex3f(-0.87f, 0.0f, 0.5f);
+				gl.glVertex3f(-0.87f, 0.0f, -0.5f);
+				gl.glVertex3f(0f, 0.0f, -1.0f);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 	        gl.glColor3f(0.035f, 0.0125f, 0);
 			
-			gl.glVertex3f(-0.5f, 0.0f, 1.0f);
-			gl.glVertex3f( 0.5f, 0.0f, 1.0f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(0f, 0.0f, -1.0f);
+			gl.glVertex3f(0.86f, 0.0f, -0.5f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(0.76f, 0.99f, 0.001f);
 			
-			gl.glVertex3f( 0.5f, 0.0f, 1.0f);
-			gl.glVertex3f(1.0f, 0.0f, 0.0f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(0.86f, 0.0f, -0.5f);
+			gl.glVertex3f(0.86f, 0.0f, 0.5f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(0.2f, 0.4f, 0.2f);
 			
-			gl.glVertex3f(1.0f, 0.0f, 0.0f);
-			gl.glVertex3f(0.5f, 0.0f, -1.0f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(0.86f, 0.0f, 0.5f);
+			gl.glVertex3f(0f, 0.0f, 1.0f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(0.32f, 0.9f, 0.1f);
 			
-			gl.glVertex3f(0.5f, 0.0f, -1.0f);
-			gl.glVertex3f(-0.5f, 0.0f, -1.0f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(0f, 0.0f, 1.0f);
+			gl.glVertex3f(-0.87f, 0.0f, 0.5f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(0.35f, 0.1f, 0.48f);
 			
-			gl.glVertex3f(-0.5f, 0.0f, -1.0f);
-			gl.glVertex3f(-1.0f, 0.0f, 0.0f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(-0.87f, 0.0f, 0.5f);
+			gl.glVertex3f(-0.87f, 0.0f, -0.5f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			gl.glBegin(GL2.GL_TRIANGLES);
 			gl.glColor3f(1, 0.98f, 0.6f);
 			
-			gl.glVertex3f(-1.0f, 0.0f, 0.0f);
-			gl.glVertex3f(-0.5f, 0.0f, 1.0f);
-			gl.glVertex3f(0f, 0.5f, 0);
+			gl.glVertex3f(-0.87f, 0.0f, -0.5f);
+			gl.glVertex3f(0f, 0.0f, -1.0f);
+			gl.glVertex3f(0f, 1f, 0);
 			gl.glEnd();
 			
 			break;
