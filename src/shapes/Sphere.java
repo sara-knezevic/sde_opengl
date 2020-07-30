@@ -7,7 +7,9 @@ import com.jogamp.opengl.glu.GLUquadric;
 
 public class Sphere {
 	
-	public Sphere(GLAutoDrawable drawable, float x, float y, float z, float a) {
+	public Sphere() {}
+	
+	public void draw(GLAutoDrawable drawable, float x, float y, float z, float a, Boolean isSelected) {
 		
 		GL2 gl = drawable.getGL().getGL2();
 		GLU glu = new GLU();
@@ -22,9 +24,14 @@ public class Sphere {
 		// multiply the current matrix to get a rotation matrix
 		gl.glRotatef(0, 0, 0, 0);
 		
-		gl.glColor3f(0, 0, 1);
+		if (!isSelected) {
+			gl.glColor3f(0, 0, 0);
+		} else {
+			gl.glColor3f(0, 0, 1);
+		}
+		
 		GLUquadric quadric = glu.gluNewQuadric();
-		glu.gluSphere(quadric, 1, 50, 15);
+		glu.gluSphere(quadric, 0.5, 10, 10);
 		glu.gluDeleteQuadric(quadric);
 		
 		gl.glPopMatrix();
